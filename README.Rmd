@@ -52,3 +52,9 @@ etherscan_transactions("0x6F46CF5569AEfA1acC1009290c8E043747172d89") %>%
   theme(legend.position = "bottom") + 
   expand_limits(y = 0)
 ```
+
+## Contributed
+
+This is an open project. Anyone who would like to contribute (features, bug fixes, documentation) is very welcome to do so.
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
