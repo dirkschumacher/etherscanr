@@ -32,7 +32,7 @@ etherscan_transactions("0x6F46CF5569AEfA1acC1009290c8E043747172d89") %>%
   filter(value > 0) %>% 
   ggplot(aes(x = timeStamp, y = value)) + 
   geom_point() + 
-  stat_smooth() + # we smooth it just be cause it looks nice ;)
+  stat_smooth() + # we smooth it just because it looks nice ;)
   theme(legend.position = "bottom") + 
   expand_limits(y = 0)
 ```
