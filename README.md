@@ -6,6 +6,15 @@ The package offers an easy way to use the [etherscan.io API](https://etherscan.i
 
 Currently **work in progress**. This is an unofficial package. As always use it at your own risk.
 
+Install
+-------
+
+Currently, the package is only available from GitHub:
+
+``` r
+devtools::install_github("dirkschumacher/etherscanr")
+```
+
 API
 ---
 
