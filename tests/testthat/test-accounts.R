@@ -8,3 +8,19 @@ test_that("it can retreive an account balance", {
   expect_true(is.character(balance$account))
   expect_true(all(balance$balance >= 0))
 })
+
+test_that("it get all normal transactions", {
+  addresses <- c("0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a")
+  transactions <- etherscan_transactions(addresses)
+  expect_true(is.data.frame(transactions))
+  expect_true(nrow(transactions) > 0)
+  expect_true(is.logical(transactions$isError))
+})
+
+test_that("it get all internal transactions", {
+  addresses <- c("0x2c1ba59d6f58433fb1eaee7d20b26ed83bda51a3")
+  transactions <- etherscan_internal_transactions(addresses)
+  expect_true(is.data.frame(transactions))
+  expect_true(nrow(transactions) > 10)
+  expect_true(is.logical(transactions$isError))
+})
